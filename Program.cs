@@ -6,6 +6,8 @@ namespace letsDoStrings
     {
         static void Main(string[] args)
         {
+
+            //This Cosnole App deals with Strings
             Console.WriteLine("Please enter Your First Name:");
             string firstName = Console.ReadLine();
 
