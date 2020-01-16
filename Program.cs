@@ -23,20 +23,6 @@ namespace letsDoStrings
             Console.ReadKey();
         }
 
-        public  string GetFirstName()
-        {
-            Console.WriteLine("Please enter Your First Name:");
-            string firstName = Console.ReadLine();
-            return firstName;
-        }
-
-        public string GetLastName()
-        {
-            Console.WriteLine("Please enter your Last Name:");
-            string lastName = Console.ReadLine();
-
-            return lastName;
-        }
 
         static void FullName(string firstName, string lastName)
         {
