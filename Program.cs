@@ -7,16 +7,15 @@ namespace letsDoStrings
 
         static void Main(string[] args)
         {
+            string fName = "", lName = "";
 
-            Console.WriteLine("Please enter Your First Name:");
-            string firstName = Console.ReadLine();
+            GetFirstName(ref fName);
+            
+            GetLastName(ref lName);
            
-            Console.WriteLine("Please enter your Last Name:");
-            string lastName = Console.ReadLine();
+            CreateFullName(fName, lName);
 
-            CreateFullName(firstName, lastName);
-
-            CalculateNameLength(firstName, lastName);
+            CalculateNameLength(fName, lName);
 
             AskRiddle();
 
@@ -24,9 +23,21 @@ namespace letsDoStrings
         }
 
 
-        static void CreateFullName(string firstName, string lastName)
+        static void GetFirstName(ref string firstName)
         {
-            Console.WriteLine(firstName + " " + lastName);
+            Console.WriteLine("Please enter Your First Name:");
+            firstName = Console.ReadLine();
+        }
+
+        static void GetLastName(ref string lastName)
+        {
+            Console.WriteLine("Please enter your Last Name:");
+            lastName = Console.ReadLine();
+        }
+
+        static void CreateFullName(string fName, string lName)
+        {
+            Console.WriteLine(fName + " " + lName);
         }
 
         static void CalculateNameLength(string firstName, string lastName )
