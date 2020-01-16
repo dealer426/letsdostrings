@@ -14,7 +14,7 @@ namespace letsDoStrings
             Console.WriteLine("Please enter your Last Name:");
             string lastName = Console.ReadLine();
 
-            FullName(firstName, lastName);
+            CreateFullName(firstName, lastName);
 
             CalculateNameLength(firstName, lastName);
 
@@ -24,7 +24,7 @@ namespace letsDoStrings
         }
 
 
-        static void FullName(string firstName, string lastName)
+        static void CreateFullName(string firstName, string lastName)
         {
             Console.WriteLine(firstName + " " + lastName);
         }
